@@ -59,4 +59,4 @@ CI/CD:
 - [Firebase Auth](https://firebase.google.com/docs/auth)
 - [AWS S3](https://aws.amazon.com/s3/)
 - [Supabase](https://supabase.com/)
-- [Sentry](https://sentry.io/welcome/)
+- [Sentry](https://sentry.io/welcome/) 
