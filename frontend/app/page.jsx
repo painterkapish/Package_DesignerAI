@@ -1,6 +1,2 @@
-import AuthForm from "./features/Auth";
-import Home from "./features/Home";
-
-export default function HomePage() {
-    return <Home />;
-}
+import Home from "./components/ui/Home";
+export default function HomePage() { return <Home />; }

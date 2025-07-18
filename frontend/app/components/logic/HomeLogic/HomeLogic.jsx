@@ -1,6 +1,6 @@
 "use client";
 import { useState } from "react";
-import HomeUI from "./HomeUI";
+import HomeUI from "../../ui/Home/HomeUI";
 
 export default function HomeLogic() {
     const [idea, setIdea] = useState("");
