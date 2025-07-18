@@ -1,4 +1,3 @@
-// frontend/app/features/Auth/SignUpUI.jsx
 
 export default function SignUpUI({ email, password, setEmail, setPassword, onSignUp, error, message, loading }) {
     return (

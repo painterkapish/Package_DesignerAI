@@ -1,5 +1,6 @@
 'use client';
 import { useState } from 'react';
+import { useRouter } from "next/navigation";
 import { supabase } from '../../../../lib/supabaseClient';
 import SignInUI from '../../ui/Auth/SignInUI';
 
@@ -9,6 +10,7 @@ export default function SignInLogic() {
   const [error, setError] = useState(null);
   const [message, setMessage] = useState(null);
   const [loading, setLoading] = useState(false);
+  const router = useRouter();
 
   const onSignIn = async () => {
     setError(null);
@@ -17,7 +19,7 @@ export default function SignInLogic() {
     const { error } = await supabase.auth.signInWithPassword({ email, password });
     setLoading(false);
     if (error) setError(error.message);
-    else setMessage('Signed in successfully!');
+    else router.push("/dashboard");
   };
 
   return (
